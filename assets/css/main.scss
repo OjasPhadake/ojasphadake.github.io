@@ -1,0 +1,111 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Site palette: forest & meadow (overrides the theme's default greys)
+ ******************************************************************************/
+
+:root {
+  --global-bg-color: #f5f2e8; /* warm parchment */
+  --global-text-color: #1e2b23; /* deep pine */
+  --global-text-color-light: #5d6b61;
+  --global-theme-color: #2e7d55; /* forest green */
+  --global-hover-color: #c46a2b; /* autumn amber */
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #1f3a2b;
+  --global-footer-text-color: #d9e6dc;
+  --global-footer-link-color: #f2d49b;
+  --global-divider-color: rgba(46, 125, 85, 0.18);
+  --global-card-bg-color: #fbf9f3;
+  --global-code-bg-color: #ebe6d6;
+  --global-highlight-color: #b4532a;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #0f1d17; /* night forest */
+  --global-text-color: #e1ebe3;
+  --global-text-color-light: #9db3a4;
+  --global-theme-color: #6fcf97; /* fresh leaf */
+  --global-hover-color: #f2b45c; /* sunlit amber */
+  --global-hover-text-color: #0f1d17;
+  --global-footer-bg-color: #0a1611;
+  --global-footer-text-color: #b9cbbf;
+  --global-footer-link-color: #f2b45c;
+  --global-divider-color: rgba(111, 207, 151, 0.18);
+  --global-card-bg-color: #162a21;
+  --global-code-bg-color: #1a2f25;
+  --global-highlight-color: #f2b45c;
+}
+
+/* A soft wash of colour behind the page instead of a flat fill. */
+body {
+  background-color: var(--global-bg-color);
+  background-image:
+    radial-gradient(circle at 12% 0%, rgba(46, 125, 85, 0.1), transparent 45%),
+    radial-gradient(circle at 95% 18%, rgba(196, 106, 43, 0.08), transparent 40%);
+  background-attachment: fixed;
+}
+
+html[data-theme="dark"] body {
+  background-image:
+    radial-gradient(circle at 12% 0%, rgba(111, 207, 151, 0.12), transparent 45%),
+    radial-gradient(circle at 95% 18%, rgba(242, 180, 92, 0.07), transparent 40%);
+}
+
+/* Let the gradient show through the fixed navbar. */
+.navbar {
+  background-color: color-mix(in srgb, var(--global-bg-color) 82%, transparent) !important;
+  backdrop-filter: blur(8px);
+}
+
+/* Project and publication cards: lift slightly on hover. */
+.projects .card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.projects .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(31, 58, 43, 0.18);
+}
+
+/* Category headings on the projects page. */
+.projects h2.category {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-divider-color);
+}

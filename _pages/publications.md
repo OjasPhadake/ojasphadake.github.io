@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: My name is in bold.
+description: Research papers and preprints.
 nav: true
 nav_order: 3
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Quant finance first, then control and optimization. Each card opens a short write-up.
+description: Selected work in quantitative finance and in control & optimization.
 nav: true
 nav_order: 2
 display_categories: [quant, control]
