@@ -8,11 +8,11 @@ Built on [al-folio](https://github.com/alshedivat/al-folio) (Jekyll) and deploye
 
 ## Where things live
 
-| What | File |
-|---|---|
-| Home page bio | `_pages/about.md` |
-| News items | `_news/` |
+| What          | File                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| Home page bio | `_pages/about.md`                                                         |
+| News items    | `_news/`                                                                  |
 | Project pages | `_projects/` (category `quant` or `control`; `importance` sets the order) |
-| Publications | `_bibliography/papers.bib` |
-| Résumé PDF | `assets/pdf/Ojas_Phadake_Resume.pdf` |
-| Social links | `_data/socials.yml` |
+| Publications  | `_bibliography/papers.bib`                                                |
+| Résumé PDF    | `assets/pdf/Ojas_Phadake_Resume.pdf`                                      |
+| Social links  | `_data/socials.yml`                                                       |
