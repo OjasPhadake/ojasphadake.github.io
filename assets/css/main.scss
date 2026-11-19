@@ -109,3 +109,13 @@ html[data-theme="dark"] body {
   color: var(--global-theme-color);
   border-bottom-color: var(--global-divider-color);
 }
+
+/* Text-only project cards: equal height, accent bar on the left. */
+.projects .card {
+  height: 100%;
+  border-left: 4px solid var(--global-theme-color);
+}
+.projects .card .card-title {
+  font-size: 1.35rem;
+  line-height: 1.3;
+}

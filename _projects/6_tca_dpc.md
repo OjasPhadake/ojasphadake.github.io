@@ -2,7 +2,6 @@
 layout: page
 title: TCA-DPC
 description: Adapting diffusion controllers to new safety constraints at test time (arXiv 2026)
-img: assets/img/projects/tca-dpc.png
 importance: 1
 category: control
 github: https://github.com/ojasph/tca-dpc

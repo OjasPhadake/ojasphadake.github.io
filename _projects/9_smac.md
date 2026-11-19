@@ -2,7 +2,6 @@
 layout: page
 title: Project SMAC
 description: ADMM motion planning with control barrier functions for safe navigation
-img: assets/img/projects/smac.png
 importance: 4
 category: control
 github: https://github.com/OjasPhadake/ProjectSMAC

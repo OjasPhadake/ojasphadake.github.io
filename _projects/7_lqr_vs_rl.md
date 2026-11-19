@@ -2,7 +2,6 @@
 layout: page
 title: LQR vs Reinforcement Learning
 description: PPO rediscovers the optimal linear feedback law without knowing the dynamics
-img: assets/img/projects/lqr-vs-rl.png
 importance: 2
 category: control
 github: https://github.com/OjasPhadake/LQRvsRL

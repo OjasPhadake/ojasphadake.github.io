@@ -2,7 +2,6 @@
 layout: page
 title: Data-Driven Optimal Control via Offline Policy Iteration
 description: Model-free finite-horizon LQR for time-varying systems from one batch of data
-img: assets/img/projects/offline-pi.png
 importance: 3
 category: control
 github: https://github.com/OjasPhadake/Data-Driven-Optimal-Control-via-Offline-Policy-Iteration

@@ -2,7 +2,6 @@
 layout: page
 title: Quantitative Portfolio Construction
 description: Mean-variance, HRP and shrinkage portfolios, plus a leakage-free LightGBM alpha model
-img: assets/img/projects/portfolio-frontier.png
 importance: 3
 category: quant
 github: https://github.com/sparshgupta02/D6701_Projects
