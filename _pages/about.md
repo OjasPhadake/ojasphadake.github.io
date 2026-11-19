@@ -6,7 +6,7 @@ subtitle: Dual Degree (B.Tech Chemical Engineering + M.Tech Data Science), <a hr
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: ojas_phadake.jpg
   image_circular: false
   more_info: >
     <p>Chennai, India</p>
