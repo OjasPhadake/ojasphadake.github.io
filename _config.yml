@@ -11,7 +11,7 @@ contact_note: >
 description: >
   Ojas Phadake, IIT Madras. Quant finance, control and optimization, and machine learning.
 footer_text: >
-  &copy; Ojas Phadake. Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on GitHub Pages.
+  Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on GitHub Pages.
 keywords: Ojas Phadake, IIT Madras, quantitative finance, quant research, control theory, optimization, model predictive control, diffusion models, machine learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📈
@@ -408,7 +408,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
