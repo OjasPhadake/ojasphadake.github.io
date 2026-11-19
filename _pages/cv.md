@@ -1,12 +1,14 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
+title: résumé
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 4
+description: <a href="/assets/pdf/Ojas_Phadake_Resume.pdf" download>Download PDF</a>
 ---
+
+<div style="width: 100%; height: 1100px;">
+  <object data="/assets/pdf/Ojas_Phadake_Resume.pdf" type="application/pdf" width="100%" height="100%">
+    <p>Your browser can't display the PDF here. <a href="/assets/pdf/Ojas_Phadake_Resume.pdf">Download the résumé</a> instead.</p>
+  </object>
+</div>
